@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>부천시청</title>
+        <link rel="shortcut icon" type="image⁄x-icon" href="p1.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script type ="text/javascript" src="web.js"></script>
+    </head>
+  
+     <script type = "text/javascript">
+        var files = ["p17.png",
+                    "s5.png",
+                    "s6.png",
+                    "s7.png",
+                    "s8.png",
+                    "s9.png",
+                    "s10.png",
+                    "s11.png",
+                    "s12.png",
+                    "s13.png",
+                    ];
+        var imgs = new Array();
+        for(var i = 0; i <files.length; i++) {
+            imgs[i] = new Image();
+            imgs[i].src = files[i];
+        }
+        var next = 0;
+        function change(img) {
+            var b;
+            b = document.getElementById("j2");
+            img = b;
+            next++;
+            next %= imgs.length;
+            img.src = imgs[next].src;
+        }
+        function change2(img) {
+            b = document.getElementById("j2");
+            img = b;
+            if (next == 0) next = imgs.length-1;
+            next--;
+            img.src = imgs[next].src;
+            
+            if (next == 0) next = imgs.length-1;
+        }   
+        setInterval(function(img){
+            var b;
+            b = document.getElementById("j2");
+            img = b;
+            next++;
+            next %= imgs.length;
+            img.src = imgs[next].src;
+        }, 5000);
+
+        var files2 =["s3.png","s4.png"]      
+        var i=1;
+        function change3(img) {
+            img.src = files2[i];
+            this.src = "s4.png";
+            i++;
+            i %= 2;
+        }
+        var files3 = ["s19.png",
+                    "s20.png",
+                    "s21.png",
+                    "s22.png",
+                    "s23.png",
+                    "s24.png",
+                    "s25.png"
+                    ];
+        var imgs2 = new Array();
+        for(var i = 0; i <files3.length; i++) {
+            imgs2[i] = new Image();
+            imgs2[i].src = files3[i];
+        }
+        var next2 = 0;
+        function change4(img) {
+            var b;
+            b = document.getElementById("j9");
+            img = b;
+            next2++;
+            next2 %= imgs2.length;
+            img.src = imgs2[next2].src;
+        }
+        setInterval(function(img){
+            var b;
+            b = document.getElementById("j9");
+            img = b;
+            next2++;
+            next2 %= imgs2.length;
+            img.src = imgs2[next2].src;
+        }, 4300);
+
+        function change5(img) {
+            b = document.getElementById("j9");
+            img = b;
+            next2--;
+            if (next2 == -1) next2 = imgs2.length-1;
+            img.src = imgs2[next2].src;
+            
+            if (next2 == -1) next2 = imgs2.length-1;
+        } 
+        var files4 =["s16.png","s17.png"]      
+        var i2=0;
+        function change6(img) {
+            img.src = files4[i2]
+            this.src = "s17.png";
+            i2++;
+            i2 %= 2;
+        }
+        function init() {
+            var e1,e2,e3,e4,e5,e6,e7;
+            e1 = document.getElementById("m1");
+            e2 = document.getElementById("m2");
+            e3 = document.getElementById("m3");
+            e4 = document.getElementById("m4");
+            e5 = document.getElementById("m5");
+            e6 = document.getElementById("m6");
+            e7 = document.getElementById("m7");
+            e1.onclick = click;
+            e2.onclick = click2;
+            e3.onclick = click3;
+            e4.onclick = click4;
+            e5.onclick = click5;
+            e6.onclick = click6;
+            e7.onclick = click7;
+
+        }
+        function click() {
+            var c;
+            c = document.getElementById("j15");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click2() {
+            var c;
+            c = document.getElementById("j16");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click3() {
+            var c;
+            c = document.getElementById("j17");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click4() {
+            var c;
+            c = document.getElementById("j18");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click5() {
+            var c;
+            c = document.getElementById("j19");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click6() {
+            var c;
+            c = document.getElementById("j20");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        function click7() {
+            var c;
+            c = document.getElementById("j21");
+            if(c.style.display == "none")
+                c.style.display="block";
+            else
+                c.style.display="none";
+        }
+        var files5 = ["s33.png",
+                    "s34.png",
+                    "s35.png",
+                    "s36.png",
+                    "s37.png",
+                    "s38.png"
+                    ];
+        var imgs3 = new Array();
+        for(var i = 0; i <files5.length; i++) {
+            imgs3[i] = new Image();
+            imgs3[i].src = files5[i];
+        }
+        var next3 = 0;
+        function change7() {
+            var b;
+            b = document.getElementById("j22");
+            img = b;
+            next3++;
+            next3 %= imgs3.length;
+            img.src = imgs3[next3].src;
+        }
+        setInterval(function(img){
+            var b;
+            b = document.getElementById("j22");
+            img = b;
+            next3++;
+            next3 %= imgs3.length;
+            img.src = imgs3[next3].src;
+        }, 3400);
+        function middle() {
+            var f,g,h,i,j,k,l,m;
+            f = document.getElementById("j37");
+            g = document.getElementById("j38");
+            h = document.getElementById("j39");
+            i = document.getElementById("j40");
+            j = document.getElementById("j41");
+            k = document.getElementById("j42");
+            l = document.getElementById("j43");
+            m = document.getElementById("j44");
+            f.style.display="block";
+            g.style.display="none";
+            h.style.display="none";
+            i.style.display="none";
+            j.style.display="block";
+            k.style.display="none";
+            l.style.display="none";
+            m.style.display="none";
+        }
+        function middle2() {
+            var f,g,h,i,j,k,l,m;
+            f = document.getElementById("j37");
+            g = document.getElementById("j38");
+            h = document.getElementById("j39");
+            i = document.getElementById("j40");
+            j = document.getElementById("j41");
+            k = document.getElementById("j42");
+            l = document.getElementById("j43");
+            m = document.getElementById("j44");
+            f.style.display="none";
+            g.style.display="block";
+            h.style.display="none";
+            i.style.display="none";
+            j.style.display="none";
+            k.style.display="block";
+            l.style.display="none";
+            m.style.display="none";
+        }
+        function middle3() {
+            var f,g,h,i,j,k,l,m;
+            f = document.getElementById("j37");
+            g = document.getElementById("j38");
+            h = document.getElementById("j39");
+            i = document.getElementById("j40");
+            j = document.getElementById("j41");
+            k = document.getElementById("j42");
+            l = document.getElementById("j43");
+            m = document.getElementById("j44");
+            f.style.display="none";
+            g.style.display="none";
+            h.style.display="block";
+            i.style.display="none";
+            j.style.display="none";
+            k.style.display="none";
+            l.style.display="block";
+            m.style.display="none";
+        }
+        function middle4() {
+            var f,g,h,i,j,k,l,m;
+            f = document.getElementById("j37");
+            g = document.getElementById("j38");
+            h = document.getElementById("j39");
+            i = document.getElementById("j40");
+            j = document.getElementById("j41");
+            k = document.getElementById("j42");
+            l = document.getElementById("j43");
+            m = document.getElementById("j44");
+            f.style.display="none";
+            g.style.display="none";
+            h.style.display="none";
+            i.style.display="block";
+            j.style.display="none";
+            k.style.display="none";
+            l.style.display="none";
+            m.style.display="block";
+        }
+        function out() {
+            var d;
+            d = document.getElementById("j15");
+            d.style.display = "none";
+        }
+        function over() {
+            var d;
+            d = document.getElementById("j15");
+            d.style.display = "inline-block";
+        }
+        function out2() {
+            var d;
+            d = document.getElementById("j16");
+            d.style.display = "none";
+        }
+        function over2() {
+            var d;
+            d = document.getElementById("j16");
+            d.style.display = "inline-block";
+        }
+        function out3() {
+            var d;
+            d = document.getElementById("j17");
+            d.style.display = "none";
+        }
+        function over3() {
+            var d;
+            d = document.getElementById("j17");
+            d.style.display = "inline-block";
+        }
+        function out4() {
+            var d;
+            d = document.getElementById("j18");
+            d.style.display = "none";
+        }
+        function over4() {
+            var d;
+            d = document.getElementById("j18");
+            d.style.display = "inline-block";
+        }
+        function out5() {
+            var d;
+            d = document.getElementById("j19");
+            d.style.display = "none";
+        }
+        function over5() {
+            var d;
+            d = document.getElementById("j19");
+            d.style.display = "inline-block";
+        }
+        function out6() {
+            var d;
+            d = document.getElementById("j20");
+            d.style.display = "none";
+        }
+        function over6() {
+            var d;
+            d = document.getElementById("j20");
+            d.style.display = "inline-block";
+        }
+        function out7() {
+            var d;
+            d = document.getElementById("j21");
+            d.style.display = "none";
+        }
+        function over7() {
+            var d;
+            d = document.getElementById("j21");
+            d.style.display = "inline-block";
+        }
+        function out8() {
+            var d;
+            d = document.getElementById("j24");
+            d.style.display = "none";
+        }
+        function over8() {
+            var d;
+            d = document.getElementById("j24");
+            d.style.display = "inline-block";
+        }
+        function out9() {
+            var d;
+            d = document.getElementById("j29");
+            d.style.display = "none";
+        }
+        function over9() {
+            var d;
+            d = document.getElementById("j29");
+            d.style.display = "inline-block";
+        }
+        function out10() {
+            var d;
+            d = document.getElementById("j30");
+            d.style.display = "none";
+        }
+        function over10() {
+            var d;
+            d = document.getElementById("j30");
+            d.style.display = "inline-block";
+        }
+        function out11() {
+            var d;
+            d = document.getElementById("j31");
+            d.style.display = "none";
+        }
+        function over11() {
+            var d;
+            d = document.getElementById("j31");
+            d.style.display = "inline-block";
+        }
+        function out12() {
+            var d;
+            d = document.getElementById("j32");
+            d.style.display = "none";
+        }
+        function over12() {
+            var d;
+            d = document.getElementById("j32");
+            d.style.display = "inline-block";
+        }
+        
+    </script>
+    <body onload="init()">
+        <div class = "navback">
+            <div class = "navback2">
+                <table class="nav">
+                    <td id= "n1" style="background-color: white;"><a href="#">부천시청홈<a></a></td>
+                    <td id= "n2" ><a href="http://council.bucheon.go.kr/" target="_blank">부천시의회<a></a></td>
+                </table>
+            </div>
+            <div class = "navback3">
+                <ul clss="nav2">
+                    <li><a href="http://www.bucheon.go.kr/site/member/login?menuid=148007001" class= "t1" style="border-right: 1px solid rgb(192, 193, 194)">로그인</a></li>
+                    <li><a href="http://www.bucheon.go.kr/site/member/location?load=join:" class= "t1">회원가입</a></li>
+                </ul>
+                <table class="nav3">
+                    <td style="border-left: 1px solid rgb(192, 193, 194); padding-left: 20px; border-right: 0px;">
+                        <select name="Language">
+                            <option value="1" selected>Language</option>
+                            <option value="2">ENGLISH</option>
+                            <option value="3">JAPANESE</option>
+                        </select>
+                    </td>
+                    <td><input type="image" src="p9.png" height="30px"></td>
+                    <td><input type="image" src="p2.png" width="30px" height="30px"></td>
+                    <td><input type="image" src="p3.png" width="30px" height="30px"></td>
+                    <td><input type="image" src="p4.png" width="30px" height="30px"></td>
+                </table>
+            </div>
+        </div>
+        <div class = "t2">
+            <div id = "animation" class = "t21" style ="opacity: 0.3">
+                <!-- <a href="http://www.bucheon.go.kr/site/main/index148" target="_blank"> -->
+                    <img src = "p5.png" height="80" style="cursor:pointer;">
+                <!-- </a> -->
+            </div>
+            <div class = "t22">
+                <div class = "search">
+                        <div >
+                            <input type="text" id="sc" placeholder="검색어를 입력하세요" style="font-size: 16px;color: rgb(160, 160, 160)">
+                        </div>
+                        <div id = "scimg">
+                            <input type="image" src ="p7.gif" height="25px" width="25px">
+                        </div>
+                </div>
+            </div>
+            <div id = "animation2" class = "t23" style="cursor:pointer;opacity: 0.3">
+                <!-- <a href="http://news.bucheon.go.kr/" target="_blank"> -->
+                    <img src = "p6.png" height="80">
+                <!-- </a> -->
+            </div>
+        </div>
+        <div class ="t3">
+            <ul>
+                <li class= "moc2" ><a id = "m1" style = "cursor:pointer;" >전자민원</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m2" style = "cursor:pointer;">시민참여</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m3" style = "cursor:pointer;">행정정보</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m4" style = "cursor:pointer;">시정소식</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m5" style = "cursor:pointer;">부천안내</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m6" style = "cursor:pointer;">분야별정보</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a id = "m7" style = "cursor:pointer;">부서안내</a></li>
+                <li class= "moc"><input type="image" src="p8.png" width="52"></li>
+            </ul>
+        </div>
+        <div class ="t4">
+            <div class="t41">
+                <div><img src="p11.png" height="190px"></div>
+                <div id ="animation3" style="left:35%; opacity:0.3"><img src="p12.png" height="190px"></div>
+                <div style="left:75%; top:250px"><a href ="#"><img src="p13.png" height="80px"></a></div>
+                <div style="left:80%; top:250px"><a href ="#"><img src="p14.png" height="72px"></a></div>
+                <div style="left:85%; top:250px"><a href ="#"><img src="p15.png" height="72px"></a></div>
+                <div style="left:91%; top:270px"><a href ="#"><img src="p16.png" height="40px" width="40px"></a></div>
+            </div>
+            <div class="t42">
+                <div>
+                    <img id ="j2" src="p17.png" height="290px" width="390px">
+                    <img id ="j1" src="s1.png" height="13px" style="cursor:pointer" onclick="change2()">
+                    <img id ="j3" src="s2.png" height="13px" style="cursor:pointer" onclick="change()">
+                    <img id ="j4" src="s3.png" height="15px" style="cursor:pointer" onclick="change3(this)">
+                </div>
+                <div class="t421" style="left:35%">
+                    <div class="t422">
+                        <ul>
+                            <li><a id = "j33" style = "cursor:pointer;" onclick="middle()">새소식</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a id="j34" style = "cursor:pointer;" onclick="middle2()">보도자료</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a id="j35" style = "cursor:pointer;" onclick="middle3()">채용시험</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a id="j36" style = "cursor:pointer;" onclick="middle4()">광역동 소식</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/list?boardtypeid=26736&menuid=148004001001" style="color:rgb(160, 160, 160); font-size: 15px;">더보기+</a></li>
+                        </ul>
+                    </div>
+                    <div class="t423" id ="j37" style="left:5%; top:17%">
+                        <ul>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=726884&pagesize=10">2019년도 상반기 인도정비사업 대상지 선정 및 사 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=726577&pagesize=10">2019년도 노후경유차 조기폐차 보조금 지원사업이 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=720223&pagesize=10">자동차 배출가스 등급제 운행제한 단속 안내 (저 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=732166&pagesize=10">장애인주차구역 위반차량 과태료처분에 대한</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=732092&pagesize=10">부천일자리카페『일일취업특강』</a></li>
+                        </ul>
+                    </div>
+                    <div class="t424" id ="j41" style="left:70%; top:17%">
+                        <ul>
+                            <li>2019-03-12</li>
+                            <li>2019-03-08</li>
+                            <li>2019-01-31</li>
+                            <li>2019-05-03</li>
+                            <li>2019-05-03</li>
+                        </ul>
+                    </div>
+                    <div class="t423" id ="j38" style="left:5%; top:17%">
+                        <ul>
+                            <li><a href=#>부천시 6월 5일 보도자료입니다.</a></li>
+                            <li><a href=#>부천시 6월 4일 보도자료입니다.</a></li>
+                            <li><a href=#>부천시 6월 3일 보도자료입니다.</a></li>
+                            <li><a href=#>부천시 5월 31일 보도자료입니다.</a></li>
+                            <li><a href=#>부천시 5월 30일 보도자료입니다.</a></li>
+                        </ul>
+                    </div>
+                    <div class="t424" id ="j42" style="left:70%; top:17%">
+                        <ul>
+                            <li>2019-06-05</li>
+                            <li>2019-06-04</li>
+                            <li>2019-06-03</li>
+                            <li>2019-05-31</li>
+                            <li>2019-05-30</li>
+                        </ul>
+                    </div>
+                    <div class="t423" id ="j39" style="left:5%; top:17%">
+                        <ul>
+                            <li><a href=#>2019년 소사보건센터 방사선사 대체인력 기간제근 ...</a></li>
+                            <li><a href=#>2019년 제3회 부천시 임기제공무원 채용시험 계획 ...</a></li>
+                            <li><a href=#>2019년도 부천여성청소년재단 한시계약직(시간제 ...</a></li>
+                            <li><a href=#>BIAF2019 단기스탭 채용공고(추가)</a></li>
+                            <li><a href=#>2019년 둘레길산불감시 및 숲길관리원 채용 최종 ...</a></li>
+                        </ul>
+                    </div>
+                    <div class="t424" id ="j43" style="left:70%; top:17%">
+                        <ul>
+                            <li>2019-06-04</li>
+                            <li>2019-06-04</li>
+                            <li>2019-06-03</li>
+                            <li>2019-06-03</li>
+                            <li>2019-05-31</li>
+                        </ul>
+                    </div>
+                    <div class="t423" id ="j40" style="left:5%; top:17%">
+                        <ul>
+                            <li><a href=#>부천시 광역동 홍보책자 안내</a></li>
+                            <li><a href=#>7월 이후 동 주민센터의 새로운 명칭 '주민지원센 ...</a></li>
+                            <li><a href=#>광역동 소식지</a></li>
+                            <li><a href=#>부천시 광역동 전환시행에 따른 광역동 홍보자료</a></li>
+                            <li style="list-style-type: none">　</li>
+                        </ul>
+                    </div>
+                    <div class="t424" id ="j44" style="left:70%; top:17%">
+                        <ul>
+                            <li>2019-06-05</li>
+                            <li>2019-04-10</li>
+                            <li>2019-04-10</li>
+                            <li>2019-04-09</li>
+                            <li>　</li>
+                        </ul>
+                    </div>
+                </div>
+                <div><img src="p18.png" id="p18" height="290px">
+                <img src="p181.png" id="p181">
+                <ul id="p182">
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 장덕천의 시장브리핑</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시장에게바란다</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시민초청대화</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시민과의약속</a></li>
+                </ul>
+                <img src="p184.png" id="p184">
+                </div>
+            </div>
+            <div class="t43">
+                <div>
+                    <img id ="j22" src="s33.png" height="280px" width="390px">
+                    <img id = "j23" src="s16.png" height="21px" style="cursor:pointer" onclick="change7()">
+                </div>
+                <div style="left: 35%">
+                    <img id="j9" src="s19.png" width="392px">
+                    <img id="j5" src="s14.png" height="29px" style="cursor:pointer" onclick="change5()">
+                    <img id="j6" src="s15.png" height="29px" style="cursor:pointer" onclick="change4()">
+                    <img id="j7" src="s17.png" height="29px" style="cursor:pointer" onclick="change6(this)">
+                    <img id="j8" src="s18.png" height="29px" style="cursor:pointer">
+                </div>
+                <div class="t431" style="left:63%;">
+                    <div class="t4311">
+                        <div style="font-size: 20px; color: white; top:2px; left: 40px;"><p>민원처리! 어디로가야 할까요?</p></div>
+                        <div style="top:52px; left: 40px">
+                            <select name="work" style="font-size: 17px; width: 171px;" >
+                                <option value="1" selected>민원업무</option>
+                                <option value="2">처리부서</option>
+                            </select>
+                        </div>
+                        <div style="top:82px; left: 40px;">
+                            <input type="text" style="font-size: 20px; width: 164px;">
+                        </div>
+                        <div style="top: 50px; left: 216px;">
+                            <input type="image" src="p21.png" width="63px">
+                        </div>
+                        <div style="top: 14px; left: 320px;">
+                            <img src="p22.png" width="90" height="105">
+                        </div>
+                    </div>
+                    <div class="t4322" style="top:143px;">
+                        <div style="font-size: 20px; color: rgb(100, 100, 100); top:2px; left: 40px;"><p>직원찾기</p></div>
+                        <div style="top:52px; left: 40px">
+                            <select name="work" style="font-size: 17px; width: 171px;" >
+                                <option value="1" selected>직원</option>
+                                <option value="2">담당업무</option>
+                                <option value="3">전화번호</option>
+                            </select>
+                        </div>
+                        <div style="top:82px; left: 40px;">
+                            <input type="text" style="font-size: 20px; width: 164px;">
+                        </div>
+                        <div style="top: 50px; left: 216px;">
+                            <input type="image" src="p21.png" width="63px">
+                        </div>
+                        <div style="left: 329px;">
+                            <a href="http://www.bucheon.go.kr/site/program/cityguid/organization?menuid=148005010001001"><img src="p23.png" width="101" height="64"></a>
+                        </div>
+                        <div style="top: 73px; left: 329px;">
+                            <a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148005010004001"><img src="p24.png" width="101" height="64"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "t5">
+            <table>
+                <td id ="b1" style = "cursor:pointer;" ><a>패밀리사이트</a><img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></td>
+                <td id ="b2" style = "cursor:pointer;" ><a>동주민센터<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td id ="b3" style = "cursor:pointer;" ><a>출연/출자/위탁기관<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td id ="b4" style = "cursor:pointer;" ><a>문화축제<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td id ="b5" style = "cursor:pointer;" ><a>유관기관<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+              </table>
+        </div>
+        <div class="t6">
+          <div id="f1">
+            <a href="http://www.bucheon.go.kr/site/main/index148"><img src="p26.gif" height="50px"></a>
+          </div>
+          <div class= "t61">
+            <ul>
+              <li style="border-right: 1px solid gray;"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008002" style="color: rgb(86, 116, 216); font-size: 17px;">개인정보처리방침</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008003">이메일수집거부정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008009001">마일리지정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008004">저작권정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/program/board/basicboard/list?boardtypeid=27006&menuid=148008011">홈페이지의견접수</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148005011">찾아오시는 길</a></li>
+              <li><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008005">뷰어다운로드</a></li>
+            </ul>
+          </div>
+          <div>
+            <P id ="f2">14547 경기도 부천시 길주로 210(중동)<br>
+              (C)2017.Bucheon City all rights reserved.</P>
+          </div>
+          <div>
+            <img id="f3" src="p27.gif" height="35px">
+          </div>
+          <div>
+            <img id ="f4" src="p28.gif" height="38">
+            <img id ="f5" src="p29.png" height="54">
+          </div>
+        </div>
+        <div id = "j15" onmouseout="out()" onmouseover="over()"> 
+            <img id = "j10"src="s26.png" height = 460px width="312px">
+            <table id = "j11">
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">민원신청</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ민원상담신고</a></li>  
+                        <li><a href=#>ㆍ방문상담예약신청</a></li>
+                        <li><a href=#>ㆍ정부24(민원서비스)</a></li>  
+                        <li><a href=#>ㆍ콜센터상담예약</a></li>
+                        <li><a href=#>ㆍ나의민원</a></li>
+                        <li><a href=#>ㆍ자동차민원안내</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">여권민원</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ여권민원안내</a></li>  
+                        <li><a href=#>ㆍ여권교부 및 우편수령</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">세금납부/조회</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li> </li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">민원서비스</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ부천시 역 민원센터</a></li>  
+                        <li><a href=#>ㆍ무료법률상담운영</a></li>
+                        <li><a href=#>ㆍ어디서나민원</a></li>  
+                        <li><a href=#>ㆍ무인민원발급창구</a></li><br>
+                        <li><a href=#>ㆍ새올민원처리공개</a></li>
+                        <li><a href=#>ㆍ사전상담예약제실시</a></li>
+                        <li><a href=#>ㆍ민원1회방문처리제안내</a></li>
+                        <li><a href=#>ㆍ사전심사청구제안내</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">민원사무안내</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ전자정부민원서식</a></li>  
+                        <li><a href=#>ㆍ부천시민원서식</a></li>
+                        <li><a href=#>ㆍ민원FAQ</a></li>  
+                        <li><a href=#>ㆍ민원사무편람</a></li>
+                        <li><a href=#>ㆍ행정정보공동이용</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">청렴부천클린신고</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ부조리신고/갑질제보</a></li>  
+                        <li><a href=#>ㆍ공직선거비리익명신고</a></li>
+                        <li><a href=#>ㆍ건설공사부실시공방지신고</a></li>  
+                        <li><a href=#>ㆍ공익신고</a></li><br>
+                        <li><a href=#>ㆍ청탁금지법위반신고</a></li>
+                        <li><a href=#>ㆍ사전 컨설팅감사 제도</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">신고센터</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실종자신고</a></li>  
+                        <li><a href=#>ㆍ유기동물/유실물신고</a></li>
+                        <li><a href=#>ㆍ행정규제개혁</a></li>  
+                        <li><a href=#>ㆍ부정불량식품신고</a></li>
+                        <li><a href=#>ㆍ부동산거래계약신고</a></li><br>
+                        <li><a href=#>ㆍ부동산불법거래신고센터</a></li>
+                        <li><a href=#>ㆍ안전신문고</a></li>
+                        <li><a href=#>ㆍ환경관계법규위반업소공개</a></li>
+                        <li><a href=#>ㆍ관련사이트</a></li><br>
+                        <li><a href=#>ㆍ다중이용시설전화번호</a></li>
+                    </ul></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "j16" onmouseout="out2()" onmouseover="over2()"> 
+            <img id = "j10"src="s27.png" height = 467.5px width="312px">
+            <table id = "j11">
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">시민제안</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ제안제도안내</a></li>  
+                        <li><a href=#>ㆍ시민제안</a></li>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">정책토론</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">공모전</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ진행중 공모전</a></li>  
+                        <li><a href=#>ㆍ종료된 공모전</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">설문참여</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ진행중설문</a></li>  
+                        <li><a href=#>ㆍ종료된설문</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">자유게시판</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">칭찬합시다</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">시민옴부즈만</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">시민단체네트워크</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">부천시공동주택</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "j17" onmouseout="out3()" onmouseover="over3()"> 
+            <img id = "j10"src="s28.png" height = 661.5px width="312px">
+            <table id = "j11">
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">주요시책</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ시정목표</a></li>  
+                        <li><a href=#>ㆍ2019시정계획</a></li>
+                        <li><a href=#>ㆍ비전부천2028</a></li>
+                        <li><a href=#>ㆍ부천시핵심가치</a></li>
+                        <li><a href=#>ㆍ주요현안업무</a></li><br>
+                        <li><a href=#>ㆍBSC성과관리</a></li>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">주요사업추진</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ문화예술회관</a></li>
+                        <li><a href=#>ㆍ소사·오정지하철</a></li>
+                        <li><a href=#>ㆍ공항주변지역고도제한완화</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">행정서비스현장</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ행정서비스헌장 제도란?</a></li>  
+                        <li><a href=#>ㆍ헌장 전문</a></li>  
+                        <li><a href=#>ㆍ공통 이행 기준</a></li>  
+                        <li><a href=#>ㆍ분야별이행기준</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">조직운영5대지표공개</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">정보공개</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ정보공개제도안내</a></li>  
+                        <li><a href=#>ㆍ사전정보공표관리</a></li>  
+                        <li><a href=#>ㆍ정보공개목록</a></li>  
+                        <li><a href=#>ㆍ정보공개청구</a></li>  
+                        <li><a href=#>ㆍ비공개대상정보세부기준</a></li><br>
+                        <li><a href=#>ㆍ업무추진비</a></li>  
+                        <li><a href=#>ㆍ개인정보목적외이용,제3자제공</a></li>  
+                        <li><a href=#>ㆍ개인정보처리업무위탁</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">공공데이터</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ공공데이터</a></li>  
+                        <li><a href=#>ㆍ공공데이터목록</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">정책실명제</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">부천의재정</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">자치법규</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">부천통계</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">지도</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">행정자료실(전자책)</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "j18" onmouseout="out4()" onmouseover="over4()"> 
+            <img id = "j10"src="s29.png" height = 467.5px width="312px">
+            <table id = "j11">
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">새소식</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ새소식</a></li>  
+                        <li><a href=#>ㆍ공공일자리사업</a></li>
+                        <li><a href=#>ㆍ경기도소식</a></li>
+                        <li><a href=#>ㆍ옥길지구소통마당</a></li>
+                        <li><a href=#>ㆍ광역동 소식</a></li>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">업무계획</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ월간업무계획</a></li>
+                        <li><a href=#>ㆍ일일부천</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">보도자료</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">데일리시정뉴스</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">부천알리미</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">행사캘린더</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">만화로보는부천</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">공고</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ고시/공고/입법예고</a></li>
+                        <li><a href=#>ㆍ입찰공고(나라장터)</a></li>
+                        <li><a href=#>ㆍ기타공고</a></li>
+                        <li><a href=#>ㆍ수의계약공고</a></li>
+                        <li><a href=#>ㆍ채용시험</a></li>
+                        <li><a href=#>ㆍ부천시보</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">복사골부천</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li></li>
+                    </ul></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "j19" onmouseout="out5()" onmouseover="over5()"> 
+                <img id = "j10"src="s30.png" height = 661.5px width="312px">
+                <table id = "j11">
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">열린시장실</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">부천이미지</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ문장(CI)</a></li>
+                            <li><a href=#>ㆍ브랜드(BI)</a></li>
+                            <li><a href=#>ㆍ나무, 꽃, 과일, 새</a></li>
+                            <li><a href=#>ㆍ시민의노래</a></li>
+                            <li><a href=#>ㆍ시민헌장</a></li>
+                            <li><a href=#>ㆍ부천핸썹</a></li><br>
+                            <li><a href=#>ㆍ꿈보&쏭</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">부천시행정구역</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">부천역사관</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ역대부천시장</a></li>  
+                            <li><a href=#>ㆍ부천의역사</a></li>  
+                            <li><a href=#>ㆍ행정연혁</a></li>  
+                            <li><a href=#>ㆍ부천의인물</a></li>  
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">구청역사관</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ원미구역사관</a></li>  
+                            <li><a href=#>ㆍ소사구역사관</a></li>  
+                            <li><a href=#>ㆍ오정구역사관</a></li>  
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">디지철부천문화대전</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">교류도시</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ국내도시</a></li>  
+                            <li><a href=#>ㆍ국외도시</a></li>  
+                            <li><a href=#>ㆍ국제교류 새소식</a></li>  
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">17사단신병교육대</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">부천QR코드</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">시청안내</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ조직도</a></li>  
+                            <li><a href=#>ㆍ업무/직원검색</a></li>  
+                            <li><a href=#>ㆍ업무별처리부서검색</a></li>  
+                            <li><a href=#>ㆍ연관홈페이지검색</a></li>  
+                            <li><a href=#>ㆍ청사배치안내</a></li><br>
+                            <li><a href=#>ㆍ시설이용안내</a></li>  
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">찾아오시는길</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">우리시수상내역</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li></li>
+                        </ul></td>
+                    </tr>
+                </table>
+        </div>
+        <div id = "j20" onmouseout="out6()" onmouseover="over6()"> 
+                <img id = "j10"src="s31.png" height = 676.5px width="312px">
+                <table id = "j11">
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">문화관광</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ문화사업</a></li>
+                            <li><a href=#>ㆍ복사골문화소식</a></li>
+                            <li><a href=#>ㆍ향토유적</a></li>
+                            <li><a href=#>ㆍ박물관</a></li>
+                            <li><a href=#>ㆍ도서문화교실</a></li>
+                            <li><a href=#>ㆍ공연장/전시관</a></li>
+                            <li><a href=#>ㆍ문화기관안내</a></li><br>
+                            <li><a href=#>ㆍ부천시문화상</a></li>
+                            <li><a href=#>ㆍ부천의축제</a></li>
+                            <li><a href=#>ㆍ테마관광</a></li>
+                            <li><a href=#>ㆍ부천의맛집</a></li>
+                            <li><a href=#>ㆍ부천의숙박</a></li>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">체육/교육</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ체육시설</a></li>
+                            <li><a href=#>ㆍ부천연고프로구단</a></li>
+                            <li><a href=#>ㆍ부천사랑서포터즈</a></li>
+                            <li><a href=#>ㆍ운동부현황</a></li>
+                            <li><a href=#>ㆍ교육강좌</a></li>
+                            <li><a href=#>ㆍ정보취약계층정보화교육</a></li><br>
+                            <li><a href=#>ㆍ복사골아카데미</a></li>
+                            <li><a href=#>ㆍ평생학습센터</a></li>
+                            <li><a href=#>ㆍ시민학습원</a></li>
+                            <li><a href=#>ㆍ장학재단</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">복지</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ맞춤형복지</a></li>
+                            <li><a href=#>ㆍ지역사회서비스투자사업</a></li>
+                            <li><a href=#>ㆍ기초생활보장</a></li>
+                            <li><a href=#>ㆍ여성</a></li>
+                            <li><a href=#>ㆍ가족/다문화</a></li>
+                            <li><a href=#>ㆍ어르신</a></li>
+                            <li><a href=#>ㆍ장애인</a></li><br>
+                            <li><a href=#>ㆍ영유아/아동/청소년</a></li>
+                            <li><a href=#>ㆍ유공자지원</a></li>
+                            <li><a href=#>ㆍ복지관소식</a></li>
+                            <li><a href=#>ㆍ복지기관</a></li>
+                            <li><a href=#>ㆍ인생이모작지원센터</a></li>
+                            <li><a href=#>ㆍ아동친화도시</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">아기환영부천</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ아기환영부천</a></li>
+                            <li><a href=#>ㆍ프로그램</a></li>
+                            <li><a href=#>ㆍ알림&소통</a></li>
+                            <li><a href=#>ㆍ아기환영시민참여단</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">경제/취업</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ경제발전기본전략</a></li>
+                            <li><a href=#>ㆍ경제전략사업</a></li>
+                            <li><a href=#>ㆍ기업지원</a></li>
+                            <li><a href=#>ㆍ기업SOS</a></li>
+                            <li><a href=#>ㆍ생활경제</a></li>
+                            <li><a href=#>ㆍ부천페이</a></li>
+                            <li><a href=#>ㆍ부천일자리센터</a></li><br>
+                            <li><a href=#>ㆍ전통시장</a></li>
+                            <li><a href=#>ㆍ사회적경제센터</a></li>
+                            <li><a href=#>ㆍ공공일자리사업</a></li>
+                            <li><a href=#>ㆍ부천노사공동직업훈련지원센터</a></li>
+                            <li><a href=#>ㆍ행정체험 부업대학생</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">부동산/도시계획/개발</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ부동산거래신고</a></li>
+                            <li><a href=#>ㆍ외국인등 부동산취득신고</a></li>
+                            <li><a href=#>ㆍ부동산계약서 검인신청</a></li>
+                            <li><a href=#>ㆍ부동산중개업정보</a></li><br>
+                            <li><a href=#>ㆍ개별공시지가열람</a></li>
+                            <li><a href=#>ㆍ주택가격열람</a></li>
+                            <li><a href=#>ㆍ부동산실거래가공개</a></li>
+                            <li><a href=#>ㆍ부동산실명제</a></li>
+                            <li><a href=#>ㆍ개발부담금</a></li><br>
+                            <li><a href=#>ㆍ부동산개발업정보</a></li>
+                            <li><a href=#>ㆍ도로명주소안내</a></li>
+                            <li><a href=#>ㆍ토지/지적정보</a></li>
+                            <li><a href=#>ㆍ부천시지적100년사</a></li>
+                            <li><a href=#>ㆍ도시개발사업</a></li><br>
+                            <li><a href=#>ㆍ건축물분양정보</a></li>
+                            <li><a href=#>ㆍ지역숙원사업</a></li>
+                            <li><a href=#>ㆍ부동산관련사이트</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">교통/재난/안전</td>
+                        <td class = "j14"><ul id = "j12">
+                           <li><a href=#>ㆍ교통정보센터</a></li>
+                           <li><a href=#>ㆍ버스</a></li>
+                           <li><a href=#>ㆍ지하철/철도</a></li>
+                           <li><a href=#>ㆍ자동차</a></li>
+                           <li><a href=#>ㆍ주정차단속</a></li>
+                           <li><a href=#>ㆍ주차장</a></li>
+                           <li><a href=#>ㆍ자전거</a></li>
+                           <li><a href=#>ㆍ재난신고전화안내</a></li><br>
+                           <li><a href=#>ㆍ개인정보침해예방</a></li>
+                           <li><a href=#>ㆍ민방위</a></li>
+                           <li><a href=#>ㆍ식품안전</a></li>
+                           <li><a href=#>ㆍCCTV관제센터</a></li>
+                           <li><a href=#>ㆍ안전모니터봉사단</a></li>
+                           <li><a href=#>ㆍ국민재난안전포털</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">환경/위생/청소</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ유용미생물(EM)보급사업</a></li>
+                            <li><a href=#>ㆍ재이용수안내</a></li>
+                            <li><a href=#>ㆍ특정경유차저공해사업</a></li>
+                            <li><a href=#>ㆍ대기오염도정보</a></li><br>
+                            <li><a href=#>ㆍ기후변화적응녹색도시</a></li>
+                            <li><a href=#>ㆍQR로 배우는 기상기후정보</a></li>
+                            <li><a href=#>ㆍ올바른쓰레기배출</a></li>
+                            <li><a href=#>ㆍ생태하천복원사업</a></li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td class = "j13" style = "cursor:pointer;">세금</td>
+                        <td class = "j14"><ul id = "j12">
+                            <li><a href=#>ㆍ세금납부/조회</a></li>
+                            <li><a href=#>ㆍ지방세개요</a></li>
+                            <li><a href=#>ㆍ세목별안내</a></li>
+                            <li><a href=#>ㆍ세목별납기및세율</a></li>
+                            <li><a href=#>ㆍ지방세 구제제도</a></li>
+                            <li><a href=#>ㆍ지방세가산세체계</a></li><br>
+                            <li><a href=#>ㆍ달력</a></li>
+                            <li><a href=#>ㆍ세외수입</a></li>
+                            <li><a href=#>ㆍ지방세세금납부</a></li>
+                            <li><a href=#>ㆍ세외수입세금납부</a></li>
+                            <li><a href=#>ㆍ관련법</a></li>
+                            <li><a href=#>ㆍ관련서식모음</a></li>
+                            <li><a href=#>ㆍ세무부서안내</a></li><br>
+                            <li><a href=#>ㆍ지방세환급금찾기</a></li>
+                            <li><a href=#>ㆍ고액체납자명단공개</a></li>
+                        </ul></td>
+                    </tr>
+                </table>
+        </div>
+        <div id = "j21" onmouseout="out7()" onmouseover="over7()"> 
+            <img id = "j10"src="s32.png" height = 883.5px width="312px">
+            <table id = "j11">
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">정책실</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>    
+                        
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">365안전센터</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">홍보실</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">감사관실</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>
+                        <li><a href=#>ㆍ청렴정보</a></li>   
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">미세먼지대책관실</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">경제국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">문화국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">복지국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">도시국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>
+                        <li><a href=#>ㆍ지구단위계획</a></li>   
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">주택국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>
+                        <li><a href=#>ㆍ정비사업</a></li>   
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">행정국</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">부천시보건소</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">환경사업단</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">교통사업단</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">도로사업단</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">공원사업단</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td class = "j13" style = "cursor:pointer;">교육사업단</td>
+                    <td class = "j14"><ul id = "j12">
+                        <li><a href=#>ㆍ실국안내</a></li>
+                        <li><a href=#>ㆍ행정자료실</a></li>  
+                    </ul></td>
+                </tr>
+            </table>
+        </div> 
+        <div id = "j24" onmouseout="out8()" onmouseover="over8()">
+            <ul id = "25">
+                <li><a href =#>계약정보공개</a></li>
+                <li><a href =#>대형폐기물 인터넷 신고</a></li>
+                <li><a href =#>부천기업 생산제품 홍보관</a></li>
+                <li><a href =#>부천시평생학습센터</a></li>
+                <li><a href =#>생활정보 길라잡이</a></li>
+                <li><a href =#>시민불편분석시스템</a></li>
+                <li><a href =#>자연생태공원</a></li>
+                <li><a href =#>주정차위반인터넷 민원처리</a></li>
+            </ul>
+            <ul id = "26">
+                <li><a href =#>계약정보공개(상하수도)</a></li>
+                <li><a href =#>도시농업한마당</a></li>
+                <li><a href =#>부천마을재생</a></li>
+                <li><a href =#>부천유네스코창의도시</a></li>
+                <li><a href =#>소셜허브</a></li>
+                <li><a href =#>안전문화운동</a></li>
+                <li><a href =#>자전거 홈페이지</a></li>
+                <li><a href =#>통계홈페이지</a></li>
+            </ul>
+            <ul id = "27">
+                <li><a href =#>공공서비스 예약</a></li>
+                <li><a href =#>맞춤형정보제공신청</a></li>
+                <li><a href =#>부천시립도서관</a></li>
+                <li><a href =#>부천일자리센터</a></li>
+                <li><a href =#>수도요금납부(이사정산)</a></li>
+                <li><a href =#>어린이 식품안전 체험관</a></li>
+                <li><a href =#>작은도서관</a></li>
+                <li><a href =#>판타지아방송국</a></li>
+            </ul>
+            <ul id = "28">
+                <li><a href =#>공동주택 정보나눔터</a></li>
+                <li><a href =#>부동산중개업소안심서비스</a></li>
+                <li><a href =#>부천시보건소</a></li>
+                <li><a href =#>상수도홈페이지</a></li>
+                <li><a href =#>시민단체네트워크</a></li>
+                <li><a href =#>인생이모작지원센터</a></li>
+                <li><a href =#>재정공시</a></li>
+                <li>ㅤㅤ　</li>
+            </ul>
+        </div>
+        <div id = "j29" onmouseout="out9()" onmouseover="over9()">
+            <ul id = "25">
+                <li><a href =#>심곡2동행정복지센터</a></li>
+                <li><a href =#>소사동</a></li>
+                <li><a href =#>춘의동</a></li>
+                <li><a href =#>중4동행정복지센터</a></li>
+                <li><a href =#>중3동</a></li>
+                <li><a href =#>심곡본동행정복지센터</a></li>
+                <li><a href =#>소사본동행정복지센터</a></li>
+                <li><a href =#>역곡3동</a></li>
+                <li><a href =#>오정동행정복지센터</a></li>
+                
+            </ul>
+            <ul id = "26">
+                <li><a href =#>심곡1동</a></li>
+                <li><a href =#>원미1동행정복지센터</a></li>
+                <li><a href =#>도당동</a></li>
+                <li><a href =#>약대동</a></li>
+                <li><a href =#>상2동행정복지센터</a></li>
+                <li><a href =#>심곡본1동</a></li>
+                <li><a href =#>소사본3동</a></li>
+                <li><a href =#>성곡동행정복지센터</a></li>
+                <li><a href =#>원종1동</a></li>
+            </ul>
+            <ul id = "27">
+                <li><a href =#>심곡3동</a></li>
+                <li><a href =#>역곡1동</a></li>
+                <li><a href =#>중동행정복지센터</a></li>
+                <li><a href =#>중1동</a></li>
+                <li><a href =#>상1동</a></li>
+                <li><a href =#>송내1동</a></li>
+                <li><a href =#>괴안동행정복지센터</a></li>
+                <li><a href =#>고강본동</a></li>
+                <li><a href =#>원종2동</a></li>
+            </ul>
+            <ul id = "28">
+                <li><a href =#>원미2동</a></li>
+                <li><a href =#>역곡2동</a></li>
+                <li><a href =#>상동</a></li>
+                <li><a href =#>중2동</a></li>
+                <li><a href =#>상3동</a></li>
+                <li><a href =#>송내2동</a></li>
+                <li><a href =#>범박동</a></li>
+                <li><a href =#>고강1동</a></li>
+                <li><a href =#>신흥동</a></li>
+            </ul>
+        </div>
+        <div id = "j30" onmouseout="out10()" onmouseover="over10()">
+            <ul id = "25">
+                <li><a href =#>가정법률상담소</a></li>
+                <li><a href =#>부천FC1995</a></li>
+                <li><a href =#>부천시경로주간보호센터</a></li>
+                <li><a href =#>부천시사회적경제센터</a></li>
+                <li><a href =#>부천시자원봉사센터</a></li>
+                <li><a href =#>부천원미지역자활센터</a></li>
+                <li><a href =#>부천치매센터</a></li>
+                <li><a href =#>상동종합사회복지관</a></li>
+                <li><a href =#>여성노동자회</a></li>
+                <li><a href =#>은가람빌</a></li>
+                <li><a href =#>한라종합사회복지관</a></li>
+            </ul>
+            <ul id = "26">
+                <li><a href =#>고강종합사회복지관</a></li>
+                <li><a href =#>부천FC사회적협동조합</a></li>
+                <li><a href =#>부천시교통정보센터</a></li>
+                <li><a href =#>부천시원미노인복지관</a></li>
+                <li><a href =#>부천시장애인종합복지관</a></li>
+                <li><a href =#>부천소사지역자활센터</a></li>
+                <li><a href =#>부천희망재단</a></li>
+                <li><a href =#>생활문화지원센터</a></li>
+                <li><a href =#>여성의전화</a></li>
+                <li><a href =#>지역사회보장협의체</a></li>
+                <li><a href =#>부천아트벙커B39</a></li>
+            </ul>
+            <ul id = "27">
+                <li><a href =#>덕유사회복지관</a></li>
+                <li><a href =#>부천도시공사</a></li>
+                <li><a href =#>부천시니어클럽</a></li>
+                <li><a href =#>부천시소사노인복지관</a></li>
+                <li><a href =#>부천시체육회통합</a></li>
+                <li><a href =#>부천장학재당</a></li>
+                <li><a href =#>사회복지협의회</a></li>
+                <li><a href =#>송내사회체육관</a></li>
+                <li><a href =#>오정레포츠센터</a></li>
+                <li><a href =#>춘의종합사회복지관</a></li>
+                <li>ㅤㅤ　</li>
+
+            </ul>
+            <ul id = "28">
+                <li><a href =#>모통이쉼터</a></li>
+                <li><a href =#>부천산업진흥원</a></li>
+                <li><a href =#>부천시립노인전문병원</a></li>
+                <li><a href =#>부천시오정노인복지관</a></li>
+                <li><a href =#>부천여성청소년재단</a></li>
+                <li><a href =#>부천종합사회복지관</a></li>
+                <li><a href =#>삼정종합사회복지관</a></li>
+                <li><a href =#>심곡종합사회복지관</a></li>
+                <li><a href =#>원종종합사회복지관</a></li>
+                <li><a href =#>한국만화영상진흥원</a></li>
+                <li>ㅤㅤ　</li>
+            </ul>
+        </div>
+        <div id = "j31" onmouseout="out11()" onmouseover="over11()">
+            <ul id = "25">
+                <li><a href =#>부천시3대봄꽃축제</a></li>
+                <li><a href =#>부천시립예술단</a></li>
+                <li><a href =#>한국예총부천지회</a></li>
+            </ul>
+            <ul id = "26">
+                <li><a href =#>부천국제판타스틱영화제</a></li>
+                <li><a href =#>부천문화재단</a></li>
+                <li><a href =#>경기콘텐츠진흥원</a></li>
+            </ul>
+            <ul id = "27">
+                <li><a href =#>부천국제만화축제</a></li>
+                <li><a href =#>부천문화원</a></li>
+                <li>ㅤㅤ　</li>
+
+            </ul>
+            <ul id = "28">
+                <li><a href =#>부천국제애니메이션페스티벌</a></li>
+                <li><a href =#>부천시박물관</a></li>
+                <li>ㅤㅤ　</li>
+            </ul>
+        </div>
+        <div id = "j32" onmouseout="out12()" onmouseover="over12()">
+            <ul id = "25">
+                <li><a href =#>부천고용노동지청</a></li>
+                <li><a href =#>부천우체국</a></li>
+                <li><a href =#>인천지검부천지청</a></li>
+            </ul>
+            <ul id = "26">
+                <li><a href =#>부천교육지원청</a></li>
+                <li><a href =#>원미경찰서</a></li>
+                <li><a href =#>인천지법부천지원</a></li>
+            </ul>
+            <ul id = "27">
+                <li><a href =#>부천세무서</a></li>
+                <li><a href =#>소사경찰서</a></li>
+                <li>ㅤㅤ　</li>
+
+            </ul>
+            <ul id = "28">
+                <li><a href =#>부천소방서</a></li>
+                <li><a href =#>오정경찰서</a></li>
+                <li>ㅤㅤ　</li>
+            </ul>
+        </div>
+        <div id = "j47">
+            <div id = "j45" >
+                알림창리스트
+            </div>
+            <div id ="j46">
+                <ol style ="opacity: 1;">
+                    <li >시민과의 대화</li>
+                    <li>위조종량제봉투</li>
+                    <li>여름꽃전시회</li>
+                    <li>청년기본소득2분기</li>
+                    <li>도당공원 백만송이 장미원 장미개화</li>
+                    <li>개발공시가</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
