@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>부천시청</title>
+        <link rel="shortcut icon" type="image⁄x-icon" href="p1.png">
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-size: 15px;
+        }
+        .navback {
+            background-color: rgb(232, 235, 242);
+            border-bottom: 1px solid;
+            border-color: rgb(192, 193, 194);
+        }
+        .navback2 {
+            padding-left: 7%;
+            height: 39px;
+        }
+        .nav {
+            margin: 0;
+            padding: 9px;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px solid rgb(192, 193, 194);
+        }
+        .nav td {
+            padding: 9px;
+        }
+        .nav td a {
+            text-decoration: none;
+            color: rgb(99, 99, 99);
+        }
+        .nav td a:hover {
+            color: rgb(109, 151, 202);
+        }
+        #n1 {
+            border-bottom: 1px solid white;
+            border-top: 2px solid rgb(37, 71, 205);
+            border-right: 1px solid rgb(192, 193, 194);
+        }
+        #n2 {
+            border-bottom: 1px solid white;
+            border-top: 1px solid rgb(232, 235, 242);
+        }
+        .t1 {
+            padding-right:10px;
+            padding-left:5px;
+        }
+        .t1:hover {
+            color: rgb(109, 151, 202);
+        }
+        .navback3 {
+            display: block;
+            float: right;
+        }
+        .navback3 ul {
+            position: absolute;
+            right:400px;
+            top: -3px;
+            list-style-type: none;
+            height: 20px;
+            background-color: rgb(232, 235, 242);
+            font-size: 15px;
+        }
+        .navback3 ul li {
+            display: inline-block;
+        }
+        .navback3 ul li a {
+            text-decoration: none;
+            color: rgb(99, 99, 99);
+        }
+        .nav3 {
+            position: absolute;
+            top:0;
+            right:100px;
+        }
+        .nav3 td {
+            border-right: 1px solid rgb(192, 193, 194);
+            padding-right: 5px;
+        }
+        .t2 {
+            height: 85px;
+        }
+        .t2 div {
+            display: inline-block;
+        }
+        .t21 {
+            padding-left: 7%;
+            padding-right: 15%;
+        }
+        .t22 {
+            height: 80px;
+        }
+        .search {
+            position: absolute;
+            top: 62px;
+            left: 570px;
+            width: 355px;
+            height: 35px;
+            border: 2px solid rgb(40, 102, 179);
+            border-radius: 25px;
+        }
+        .search div {
+            display: inline-block;
+        }
+        #sc {
+            position: absolute;
+            top: 4px;
+            left: 25px;
+            border : 0;
+            width: 275px;
+            height: 25px;
+        }
+        #scimg {
+            position: absolute;
+            top: 4px;
+            left: 310px;
+            height: 25px;
+        }
+        .t23 {
+            height: 80;
+            float: right;
+            padding-right: 7%;
+        }
+        .t3 {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-color: rgb(170, 171, 173);
+            padding-left:3%;
+        }
+        .t3 ul {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            margin: 0;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        .t3 ul li {
+            display: inline-block;
+        }
+        .t3 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .t3 ul li a:hover {
+            color: rgb(109, 151, 202);
+        }
+        .moc2 {
+            padding-right: 43px;
+            padding-left: 43px;
+        }
+        .moc {
+            position: absolute;
+            float: right;
+            top:126px;
+            right:7%;
+        }
+        .t4 {
+            background-image: url('p10.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        } 
+        .t41 {
+            height: 200px;
+            padding-left: 7%;
+        }
+        .t41 div {
+            position: absolute;
+            display: inline-block;
+        }
+        .t42 {
+            height: 290px;
+            padding-left: 7%;
+        }
+        .t42 div {
+            position: absolute;
+            display: inline-block;
+        }
+        .t421 {
+            color: rgb(95, 96, 97);
+            background-color: white;
+            height: 290px;
+            width: 555px;
+        }
+        .t421 ul li a{
+            text-decoration: none;
+            color: rgb(95, 96, 97);
+        }
+        .t422 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            width: 555px;
+            border-bottom: 1px solid rgb(204, 207, 209);
+            
+        }
+        .t422 div {
+            position: relative;
+        }
+        .t422 ul {
+            display: inline;
+            font-size: 17px;
+            padding-left: 30px;
+        }
+        .t422 ul li {
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .t423 ul {
+            font-size: 16px;
+        }
+        .t423 ul li {
+            padding: 10px;
+        }
+        .t423 ul li a:hover {
+            color: rgb(109, 151, 202);
+        }
+        .t424 {
+            width: 200px;
+        }
+        .t424 ul {
+            list-style-type: none;
+            font-size: 14px;
+            padding-right:0;
+        }
+        .t424 ul li {
+            padding: 12px;
+        }
+        
+        #p18 {
+            position: absolute;
+            left: 965px;
+            z-index: 1;
+        }
+        #p181 {
+            position: absolute;
+            left: 984px;
+            top: 34px;
+            z-index: 2;
+        }
+        #p182 {
+            list-style: none;
+            width:150px;
+            position: absolute;
+            left: 940px;
+            top: 120px;
+            z-index: 2;
+        }
+        #p182 li{
+            display: inline-block;
+            margin-bottom: 7px;
+        }
+        #p182 li a {
+            text-decoration: none;
+            color : white;
+            font-size: 16px;
+        }
+        #p184 {
+            z-index: 2;
+            position: absolute;
+            top: 239px;
+            left: 980px;
+        }
+        .t43 {
+            height: 280px;
+            padding-left: 7%;
+            padding-top: 14px;
+            padding-bottom: 60px;
+        }
+        .t43 div {
+            position: absolute;
+            display: inline-block;
+        }
+        .t4311 {
+            width: 430px;
+            height: 135px;
+            background-color: rgb(83, 135, 199);
+        }
+        .t4322 {
+            width: 318px;
+            height: 137px;
+            background-color: rgb(229, 232, 235);
+        }
+        .t5 {
+            position: absolute;
+            top: 1020px;
+            height: 55px;
+            width: 100%;
+            background-color: rgb(87, 86, 86);
+        }
+        .t5 table {
+            margin-left: 7%;
+            border-collapse: collapse;
+        }
+        .t5 table td{
+            width: 230px;
+            height: 55px;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            padding-left: 15px;
+            padding-top: 3px;
+        }
+        .t5 table td a{
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            padding-top: 40px;
+        }
+        .t6 {
+          margin-top: 55px;
+          height: 130px;
+          widows: 100%;
+        }
+        #f1 {
+          position: absolute;
+          top: 1110px;
+          left: 7%;
+        }
+        .t61 {
+          position: absolute;
+          top: 1086px;
+          left: 260px;
+        }
+        .t61 ul{
+          list-style-type: none;
+
+        }
+        .t61 ul li {
+          display: inline-block;
+          font-size: 15px;
+          padding-right: 5px;
+        }
+        .t61 ul li a {
+          text-decoration: none;
+          color: gray;
+        }
+        #f2 {
+          position:absolute;
+          top: 1125px;
+          left: 300px;
+          color: rgb(100, 99, 99);
+        }
+        #f3 {
+          position:absolute;
+          top: 1140px;
+          left: 575px;
+        }
+        #f4 {
+          position:absolute;
+          top: 1110px;
+          right: 14%;
+        }
+        #f5 {
+          position:absolute;
+          top: 1100px;
+          right: 7.7%;
+        }
+
+    </style>
+    <body>
+        <div class = "navback">
+            <div class = "navback2">
+                <table class="nav">
+                    <td id= "n1" style="background-color: white;"><a href="#">부천시청홈<a></a></td>
+                    <td id= "n2" ><a href="http://council.bucheon.go.kr/" target="_blank">부천시의회<a></a></td>
+                </table>
+            </div>
+            <div class = "navback3">
+                <ul clss="nav2">
+                    <li><a href="http://www.bucheon.go.kr/site/member/login?menuid=148007001" class= "t1" style="border-right: 1px solid rgb(192, 193, 194)">로그인</a></li>
+                    <li><a href="http://www.bucheon.go.kr/site/member/location?load=join:" class= "t1">회원가입</a></li>
+                </ul>
+                <table class="nav3">
+                    <td style="border-left: 1px solid rgb(192, 193, 194); padding-left: 20px; border-right: 0px;">
+                        <select name="Language">
+                            <option value="1" selected>Language</option>
+                            <option value="2">ENGLISH</option>
+                            <option value="3">JAPANESE</option>
+                        </select>
+                    </td>
+                    <td><input type="image" src="p9.png" height="30px"></td>
+                    <td><input type="image" src="p2.png" width="30px" height="30px"></td>
+                    <td><input type="image" src="p3.png" width="30px" height="30px"></td>
+                    <td><input type="image" src="p4.png" width="30px" height="30px"></td>
+                </table>
+            </div>
+        </div>
+        <div class = "t2">
+            <div class = "t21">
+                <a href="http://www.bucheon.go.kr/site/main/index148" target="_blank"><img src = "p5.png"  height="80"></a>
+            </div>
+            <div class = "t22">
+                <div class = "search">
+                        <div >
+                            <input type="text" id="sc" placeholder="검색어를 입력하세요" style="font-size: 16px;color: rgb(160, 160, 160)">
+                        </div>
+                        <div id = "scimg">
+                            <input type="image" src ="p7.gif" height="25px" width="25px">
+                        </div>
+                </div>
+            </div>
+            <div class = "t23">
+                <a href="http://news.bucheon.go.kr/" target="_blank"><img src = "p6.png" height="80"></a>
+            </div>
+        </div>
+        <div class ="t3">
+            <ul>
+                <li class= "moc2"><a href=#>전자민원</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>시민참여</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>행정정보</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>시정소식</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>부천안내</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>분야별정보</a></li>
+                <li class= "moc2" style="border-left: 1px solid rgb(133, 133, 133);"><a href=#>부서안내</a></li>
+                <li class= "moc"><input type="image" src="p8.png" width="52"></li>
+            </ul>
+        </div>
+        <div class ="t4">
+            <div class="t41">
+                <div><img src="p11.png" height="190px"></div>
+                <div style="left:35%"><img src="p12.png" height="190px"></div>
+                <div style="left:75%; top:250px"><a href ="#"><img src="p13.png" height="80px"></a></div>
+                <div style="left:80%; top:250px"><a href ="#"><img src="p14.png" height="72px"></a></div>
+                <div style="left:85%; top:250px"><a href ="#"><img src="p15.png" height="72px"></a></div>
+                <div style="left:91%; top:270px"><a href ="#"><img src="p16.png" height="40px" width="40px"></a></div>
+            </div>
+            <div class="t42">
+                <div><img src="p17.png" height="290px" width="390px"></div>
+                <div class="t421" style="left:35%">
+                    <div class="t422">
+                        <ul>
+                            <li><a href=#>새소식</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a href=#>보도자료</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a href=#>채용시험</a></li>
+                            <li style="border-left: 1px solid rgb(160, 160, 160);"><a href=#>광역동 소식</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/list?boardtypeid=26736&menuid=148004001001" style="color:rgb(160, 160, 160); font-size: 15px;">더보기+</a></li>
+                        </ul>
+                    </div>
+                    <div class="t423" style="left:5%; top:17%">
+                        <ul>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=726884&pagesize=10">2019년도 상반기 인도정비사업 대상지 선정 및 사 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=726577&pagesize=10">2019년도 노후경유차 조기폐차 보조금 지원사업이 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=720223&pagesize=10">자동차 배출가스 등급제 운행제한 단속 안내 (저 ...</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=732166&pagesize=10">장애인주차구역 위반차량 과태료처분에 대한</a></li>
+                            <li><a href="http://www.bucheon.go.kr/site/program/board/basicboard/view?boardtypeid=26736&menuid=148004001001&boardid=732092&pagesize=10">부천일자리카페『일일취업특강』</a></li>
+                        </ul>
+                    </div>
+                    <div class="t424" style="left:70%; top:17%">
+                        <ul>
+                            <li>2019-03-12</li>
+                            <li>2019-03-08</li>
+                            <li>2019-01-31</li>
+                            <li>2019-05-03</li>
+                            <li>2019-05-03</li>
+                        </ul>
+                    </div>
+                </div>
+                <div><img src="p18.png" id="p18" height="290px">
+                <img src="p181.png" id="p181">
+                <ul id="p182">
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 장덕천의 시장브리핑</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시장에게바란다</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시민초청대화</a></li>
+                    <li><img src="p183.png" height="13px;"><a href ="#"> 시민과의약속</a></li>
+                </ul>
+                <img src="p184.png" id="p184">
+                </div>
+            </div>
+            <div class="t43">
+                <div>
+                    <img src="p19.png" height="280px" width="390px">
+                </div>
+                <div style="left: 35%">
+                    <img src="p20.png" height="280px">
+                </div>
+                <div class="t431" style="left:63%;">
+                    <div class="t4311">
+                        <div style="font-size: 20px; color: white; top:2px; left: 40px;"><p>민원처리! 어디로가야 할까요?</p></div>
+                        <div style="top:52px; left: 40px">
+                            <select name="work" style="font-size: 17px; width: 171px;" >
+                                <option value="1" selected>민원업무</option>
+                                <option value="2">처리부서</option>
+                            </select>
+                        </div>
+                        <div style="top:82px; left: 40px;">
+                            <input type="text" style="font-size: 20px; width: 164px;">
+                        </div>
+                        <div style="top: 50px; left: 216px;">
+                            <input type="image" src="p21.png" width="63px">
+                        </div>
+                        <div style="top: 14px; left: 320px;">
+                            <img src="p22.png" width="90" height="105">
+                        </div>
+                    </div>
+                    <div class="t4322" style="top:143px;">
+                        <div style="font-size: 20px; color: rgb(100, 100, 100); top:2px; left: 40px;"><p>직원찾기</p></div>
+                        <div style="top:52px; left: 40px">
+                            <select name="work" style="font-size: 17px; width: 171px;" >
+                                <option value="1" selected>직원</option>
+                                <option value="2">담당업무</option>
+                                <option value="3">전화번호</option>
+                            </select>
+                        </div>
+                        <div style="top:82px; left: 40px;">
+                            <input type="text" style="font-size: 20px; width: 164px;">
+                        </div>
+                        <div style="top: 50px; left: 216px;">
+                            <input type="image" src="p21.png" width="63px">
+                        </div>
+                        <div style="left: 329px;">
+                            <a href="http://www.bucheon.go.kr/site/program/cityguid/organization?menuid=148005010001001"><img src="p23.png" width="101" height="64"></a>
+                        </div>
+                        <div style="top: 73px; left: 329px;">
+                            <a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148005010004001"><img src="p24.png" width="101" height="64"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "t5">
+            <table>
+                <td><a href=#>패밀리사이트<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td><a href=#>동주민센터<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td><a href=#>출연/출자/위탁기관<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td><a href=#>문화축제<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+                <td><a href=#>유관기관<img src="p25.png" width="22px" style="padding-right: 20px; float: right;"></a></td>
+              </table>
+        </div>
+        <div class="t6">
+          <div id="f1">
+            <a href="http://www.bucheon.go.kr/site/main/index148"><img src="p26.gif" height="50px"></a>
+          </div>
+          <div class= "t61">
+            <ul>
+              <li style="border-right: 1px solid gray;"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008002" style="color: rgb(86, 116, 216); font-size: 17px;">개인정보처리방침</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008003">이메일수집거부정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008009001">마일리지정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008004">저작권정책</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/program/board/basicboard/list?boardtypeid=27006&menuid=148008011">홈페이지의견접수</a></li>
+              <li style="border-right: 1px solid gray"><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148005011">찾아오시는 길</a></li>
+              <li><a href="http://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148008005">뷰어다운로드</a></li>
+            </ul>
+          </div>
+          <div>
+            <P id ="f2">14547 경기도 부천시 길주로 210(중동)<br>
+              (C)2017.Bucheon City all rights reserved.</P>
+          </div>
+          <div>
+            <img id="f3" src="p27.gif" height="35px">
+          </div>
+          <div>
+            <img id ="f4" src="p28.gif" height="38">
+            <img id ="f5" src="p29.png" height="54">
+          </div>
+        </div>
+    </body>
+</html>
